@@ -1,0 +1,85 @@
+body.center-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f7f8f9;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+#main-heading {
+  text-align: center;
+  color: #333;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+#todo-input,
+#todo-date {
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+#todo-input:focus,
+#todo-date:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.btn-delete,
+.btn-todo {
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for button color and text color */
+}
+
+.btn-delete {
+  background-color: #d9534f;
+  color: white;
+}
+
+.btn-todo {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.main-body {
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
+}
+
+.main-body:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Adjusted box shadow on hover */
+}
+
+/* Add a subtle background color change on hover for buttons */
+.btn-delete:hover {
+  background-color: #c9302c;
+}
+
+.btn-todo:hover {
+  background-color: #4cae4c;
+}
